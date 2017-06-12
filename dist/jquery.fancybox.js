@@ -4830,7 +4830,7 @@
 			                instance.opts.origHash = window.location.hash;
 			            }
 
-						currentHash = gallery + ( instance.group.length > 1 ? '-' + ( current.index + 1 ) : '' );
+						currentHash = current.opts.hash || gallery + ( instance.group.length > 1 ? '-' + ( current.index + 1 ) : '' );
 
 						if ( 'replaceState' in window.history ) {
 							if ( timerID ) {
